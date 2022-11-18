@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "typer_configparse"
+authors = [{name = "Ian A. Neal", email = "wopr@wopr.tech"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "typer >=0.7.0,<1",
+]
+
+[project.urls]
+Home = "https://github.com/nealian/typer-configparse"
+Documentation = "https://typer-configparse.readthedocs.io/"
