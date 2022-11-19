@@ -1,10 +1,13 @@
 # Configuration file for the Sphinx documentation builder.
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../'))
 import typer_configparse
 
 # -- Project information
 
-project = typer_configparse.__name__
+project = 'typer_configparse'
 author = typer_configparse.__author__
 copyright = typer_configparse.__copyright__
 
