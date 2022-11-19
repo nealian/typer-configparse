@@ -57,6 +57,8 @@ class ConfigParseOptionInfo(typer.models.OptionInfo):
         path_type: Union[None, Type[str], Type[bytes]] = None,
         rich_help_panel: Union[str, None] = None,
         # Our options
+        allow_from_config: bool = True,
+        config_option_path: Optional[str] = None,
     ):
         super().__init__(
             default=default,
@@ -101,3 +103,5 @@ class ConfigParseOptionInfo(typer.models.OptionInfo):
             path_type=path_type,
             rich_help_panel=rich_help_panel,
         )
+        self.allow_from_config = allow_from_config
+        self.config_option_path = config_option_path
