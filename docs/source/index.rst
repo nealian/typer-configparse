@@ -1,10 +1,10 @@
 Welcome to typer-configparse's documentation!
 ===================================
 
-This thing does some stuff
+An extension for `Typer <https://github.com/tiangolo/typer>` to add configuration file support to (sub)command Options.
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+:ref:`installation` for the project.
 
 .. note::
 

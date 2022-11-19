@@ -1,13 +1,15 @@
 # Configuration file for the Sphinx documentation builder.
 
+import typer_configparse
+
 # -- Project information
 
-project = 'typer_configparse'
-copyright = '2022 Ian Neal'
-author = 'Ian Neal'
+project = typer_configparse.__name__
+author = typer_configparse.__author__
+copyright = typer_configparse.__copyright__
 
-release = '0.0'
-version = '0.0.1'
+version = typer_configparse.__version__
+release = '.'.join(version.split('.')[:-1])
 
 # -- General configuration
 

@@ -11,6 +11,8 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
     "typer >=0.7.0,<1",
+    "toml >=0.10.2,<1",
+    "PyYAML >=6.0,<7",
 ]
 
 [project.urls]
