@@ -55,6 +55,7 @@ def ConfigParseOption(
     path_type: Union[None, Type[str], Type[bytes]] = None,
     rich_help_panel: Union[str, None] = None,
     # Our options
+    allow_from_config: bool = True,
     config_option_path: Optional[str] = None,
 ) -> Any:
     return ConfigParseOptionInfo(
@@ -101,4 +102,10 @@ def ConfigParseOption(
         path_type=path_type,
         rich_help_panel=rich_help_panel,
         # Our options
+        allow_from_config=allow_from_config,
+        config_option_path=config_option_path,
     )
+
+
+def ConfigParseArgument():
+    pass  # IMPLEMENTME

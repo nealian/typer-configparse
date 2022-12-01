@@ -1,7 +1,10 @@
-from typing import Any, Callable, List, Optional, Sequence, Type, Union
+from typing import TYPE_CHECKING, Any, Callable, List, Optional, Sequence, Type, Union
 
 import click
-import click.shell_completion
+
+if TYPE_CHECKING:  # pragma: no cover
+    import click.shell_completion
+
 import typer
 
 

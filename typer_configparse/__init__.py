@@ -9,5 +9,9 @@ __copyright__ = "2022 Ian A. Neal"
 from typer_configparse.core import ConfigParseTyper as ConfigParseTyper
 from typer_configparse.option import ConfigParseOption as ConfigParseOption
 from typer_configparse.parser import ConfigParser as ConfigParser
+from typer_configparse.parser import JSONConfigParser as JSONConfigParser
 from typer_configparse.parser import TOMLConfigParser as TOMLConfigParser
 from typer_configparse.parser import YAMLConfigParser as YAMLConfigParser
+
+Typer = ConfigParseTyper
+Option = ConfigParseOption
